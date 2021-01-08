@@ -19,7 +19,7 @@ public class Part5_HistoricTaskInstance {
         List<HistoricTaskInstance> list = historyService
                 .createHistoricTaskInstanceQuery()
                 .orderByHistoricTaskInstanceEndTime().asc()
-                .taskAssignee("bajie")
+                .taskAssignee("wukong")
                 .list();
         for(HistoricTaskInstance hi : list){
             System.out.println("Id："+ hi.getId());
@@ -37,7 +37,7 @@ public class Part5_HistoricTaskInstance {
         List<HistoricTaskInstance> list = historyService
                 .createHistoricTaskInstanceQuery()
                 .orderByHistoricTaskInstanceEndTime().asc()
-                .processInstanceId("1f2314cb-cefa-11ea-84aa-dcfb4875e032")
+                .processInstanceId("2856955c-50ce-11eb-95f8-1e34aa5fd354")
                 .list();
         for(HistoricTaskInstance hi : list){
             System.out.println("Id："+ hi.getId());

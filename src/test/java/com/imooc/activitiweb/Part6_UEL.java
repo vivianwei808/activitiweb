@@ -38,12 +38,12 @@ public class Part6_UEL {
 
     }
 
-    //完成任务带参数，指定流程变量测试
+    //完成任务带参数，指定流程变量测试  V2
     @Test
     public void completeTaskWithArgs() {
         Map<String, Object> variables = new HashMap<String, Object>();
         variables.put("pay", "101");
-        taskService.complete("a616ea19-d3a7-11ea-9e14-dcfb4875e032",variables);
+        taskService.complete("d182c3d2-50e6-11eb-93fd-1253fb9c9bcd",variables);
         System.out.println("完成任务");
     }
 

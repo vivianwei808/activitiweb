@@ -63,7 +63,7 @@ public class Part8_ProcessRuntime {
         securityUtil.logInAs("bajie");
         ProcessInstance processInstance = processRuntime.delete(ProcessPayloadBuilder
                 .delete()
-                .withProcessInstanceId("6fcecbdb-d3e0-11ea-a6c9-dcfb4875e032")
+                .withProcessInstanceId("ef605142-515c-11eb-b3fc-1253fb9c9bcd")
                 .build()
         );
     }

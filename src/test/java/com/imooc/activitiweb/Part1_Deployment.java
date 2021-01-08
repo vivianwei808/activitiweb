@@ -19,12 +19,19 @@ public class Part1_Deployment {
     //通过bpmn部署流程
     @Test
     public void initDeploymentBPMN(){
-        String filename="BPMN/Part4_Task_claim.bpmn";
+//        String filename="BPMN/Part4_Task_claim.bpmn";
+//        String filename="BPMN/Part6_UEL_V2.bpmn";
+//        String filename="BPMN/Part7_Parallel.bpmn";
+
+        String filename="BPMN/Part8_ProcessRuntime.bpmn";
+
         // String pngname="BPMN/Part1_Deployment.png";
         Deployment deployment=repositoryService.createDeployment()
                 .addClasspathResource(filename)
                 //.addClasspathResource(pngname)//图片
-                .name("流程部署测试候选人task")
+//                .name("流程部署UELV2")
+//                .name("并行网关")
+                .name("结合security的bpmn")
                 .deploy();
         System.out.println(deployment.getName());
     }

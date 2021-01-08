@@ -35,7 +35,7 @@ public class Part2_ProcessDefinition {
     @Test
     public void delDefinition(){
 
-        String pdID="44b15cfe-ce3e-11ea-92a3-dcfb4875e032";
+        String pdID="459cfe75-50c8-11eb-8d58-1e34aa5fd354";
         repositoryService.deleteDeployment(pdID,true);
         System.out.println("删除流程定义成功");
     }

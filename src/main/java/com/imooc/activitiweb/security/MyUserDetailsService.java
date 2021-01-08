@@ -25,7 +25,7 @@ public class MyUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-//-------------------------读取数据库判断登录-----------------------
+//-------------- -----------读取数据库判断登录-----------------------
 /*        SysUser sysUser = sysUserService.queryByUsername(username);
 
         if (Objects.nonNull(sysUser)) {

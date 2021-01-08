@@ -24,7 +24,8 @@ public class Part7_Gateway {
 
         ProcessInstance processInstance = runtimeService
                 .startProcessInstanceByKey(
-                        "myProcess_Inclusive");
+//                        "myProcess_Inclusive");
+                        "myProcess_Parallel");
         System.out.println("流程实例ID："+processInstance.getProcessDefinitionId());
     }
 
@@ -35,8 +36,8 @@ public class Part7_Gateway {
 
         //流程实例idecd41693-d3cd-11ea-ad34-dcfb4875e032
 
-        taskService.complete("398a746e-d3ce-11ea-8bb4-dcfb4875e032");
-        taskService.complete("398a7470-d3ce-11ea-8bb4-dcfb4875e032");
+        taskService.complete("98c0dc03-50e9-11eb-a9a7-1253fb9c9bcd");
+//        taskService.complete("98c10315-50e9-11eb-a9a7-1253fb9c9bcd");
         System.out.println("完成任务");
 
 
